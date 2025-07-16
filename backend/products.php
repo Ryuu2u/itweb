@@ -27,9 +27,11 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 
         <main class="p-4 flex-grow-1">
             <h2>จัดการรายการอาหาร</h2>
+            <a href="addproducts.php" class="btn btn-secondary mb-3">เพิ่มรายการสินค้า</a>
             <table class="table table-bordered text-center">
                 <thead class="table-dark">
                     <tr>
+                        <th>No.</th>
                         <th>ID</th>
                         <th>Profile Image</th>
                         <th>Name</th>
@@ -40,8 +42,9 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+                    <?php $i = 1; while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
                         <tr>
+                            <td class="text-center"><?= $i++; ?></td>
                             <td><?= htmlspecialchars($row['id']); ?></td>
                             <td><img src="../assets/imgs/<?= htmlspecialchars($row['product_image']); ?>" alt="" style="width: 100px;   "></td>
                             <td><?= htmlspecialchars($row['product_name']); ?> </td>
