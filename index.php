@@ -25,7 +25,7 @@ if (!isset($_SESSION['user_id'])) {
     <!-- <p><?php echo htmlspecialchars($_SESSION['name']); ?></p>
     <p><?php echo htmlspecialchars($_SESSION['email']); ?></p> -->
     <!-- hero section -->
-    <section class="hero text-white text-center py-5" style="background: linear-gradient(to right,rgba(90, 90, 90, 1),rgba(0, 0, 0, 1)); height: 100vh;">
+    <section class="hero text-white text-center py-5" style="background: linear-gradient(to right,rgba(76, 59, 131, 1),rgba(40, 9, 124, 1)); height: 100vh; ">
         <div class="container h-100 d-flex flex-column justify-content-center">
             <h1 class="display-4">ยินดีตอนรับสู่เว็บไซต์ของเรา</h1>
             <p class="lead">ค้นพบโลกแห่งเทคโนโลยีสารสนเทศและข่าวสารล่าสุดดกี่ยวกับการพัฒนาเทคโนโลยี</p>

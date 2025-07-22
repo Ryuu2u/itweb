@@ -19,14 +19,14 @@
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" id="navberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ยินดีตอนรับคุณ <?php echo htmlspecialchars($_SESSION['name']); ?>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navberDropdown">
-                        <?php if(isset($_SESSION['role'])  && $_SESSION['role'] === 'admin'): ?>
-                        <li><a href="/itweb/backend/index.php" class="dropdown-item">ตั้งค่า</a></li>
-                        <?php endif; ?>
-                        <li><a href="#" class="dropdown-item">โปรไฟล์</a></li>
-                        <li><a href="controls/signout.php" class="dropdown-item">ออกจากระบบ</a></li>
-                    </ul>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navberDropdown">
+                            <?php if (isset($_SESSION['role'])  && $_SESSION['role'] === 'admin'): ?>
+                                <li><a href="/itweb/backend/index.php" class="dropdown-item">ตั้งค่า</a></li>
+                            <?php endif; ?>
+                            <li><a href="#" class="dropdown-item">โปรไฟล์</a></li>
+                            <li><a href="controls/signout.php" class="dropdown-item">ออกจากระบบ</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

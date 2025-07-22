@@ -11,12 +11,12 @@
     <!-- SweetAlert2 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body style="background: linear-gradient(to right,rgb(142, 65, 197),rgb(75, 161, 231));">
+<body style="background: linear-gradient(to right,rgba(76, 59, 131, 1),rgba(40, 9, 124, 1)); height: 100vh; ">
     <?php include './components/header.php'; ?>
 
     <section id="fecth-user" class="py-5">
         <div class="container">
-            <h2 class="mb-4">แสดงข้อมูลผู้ใช้งาน</h2>
+            <h2 class="mb-4 text-white">แสดงข้อมูลผู้ใช้งาน</h2>
             <?php if($stmt->rowCount() > 0) : ?>
                 <div class="container mt-5">
                     <div class="row">
@@ -40,7 +40,6 @@
 
         </div>
     </section>
-
     <?php include './components/footer.php'; ?>
 </body>
 </html>
