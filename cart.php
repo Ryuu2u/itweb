@@ -10,17 +10,19 @@ session_start();
     <title>Products</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+     <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SweetAlert2 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body style="background: linear-gradient(to right,rgba(76, 59, 131, 1),rgba(40, 9, 124, 1)); height: 100vh; ">
     <?php include './components/header.php'; ?>
 
     <section id="cart_product" class="py-5">
         <div class="container">
-            <h2 class="mb-4">แสดงข้อมูลตะกร้าสินค้า</h2>
+            <h2 class="mb-4 text-white">แสดงข้อมูลตะกร้าสินค้า</h2>
             <div class="container mt-5">
                 <div class="row">
                     <?php if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0): ?>

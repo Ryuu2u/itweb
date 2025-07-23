@@ -16,6 +16,8 @@
                     <li class="nav-item">
                         <a href="user.php" class="nav-link">ผู้ใช้งาน</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="cart.php" class="nav-link">ตะกร้า</a>
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" id="navberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ยินดีตอนรับคุณ <?php echo htmlspecialchars($_SESSION['name']); ?>

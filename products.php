@@ -34,9 +34,9 @@
                                         <div class="text-center">
                                             <button class="btn btn-primary" id="add-to-cart"
                                                 data-id="<?= htmlspecialchars($row['id']); ?>"
-                                                data-name="<?= htmlspecialchars($row['name']); ?>"
+                                                data-name="<?= htmlspecialchars($row['product_name']); ?>"
                                                 data-price="<?= htmlspecialchars($row['price']); ?>"
-                                                data-image="<?= htmlspecialchars($row['image']); ?>">
+                                                data-image="<?= htmlspecialchars($row['product_image']); ?>">
                                                 เพิ่มสินค้า
                                             </button>
                                         </div>
