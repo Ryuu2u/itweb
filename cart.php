@@ -1,5 +1,6 @@
 <?php
 session_start();
+include './controls/fetchDelivery.php';
 // เพิ่มจำนวนสินค้าในตะกร้า
 if (isset($_POST['action']) && $_POST['action'] == 'increase' && isset($_POST['productId'])) {
     $productId = $_POST['productId'];
@@ -113,6 +114,14 @@ if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
                     <?php else: ?>
                         <p class="text-center col-12 text-white">ไม่มีสินค้าในตระกล้า</p>
                     <?php endif; ?>
+                    <div class="mt-4 text-right">
+                        <h4 class="text-white"><strong>Delivery Information</strong></h4>
+                        <hr>
+                        <p class="text-white"><strong>Name: </strong><?=htmlspecialchars($row['first_name']) . " " . htmlspecialchars($row['last_name']); ?></p>
+                        <p class="text-white"><strong>Address: </strong><?=htmlspecialchars($row['address']); ?> </p>
+                        <p class="text-white"><strong>Tel: </strong> <?=htmlspecialchars($row['phone']); ?></p>
+                        <p class="text-white"><strong>Email: </strong> <?=htmlspecialchars($row['email']); ?></p>
+                    </div>
                 </div>
             </div>
         </div>
