@@ -1,6 +1,6 @@
 <?php
 // รวมการเชื่อมต่อฐานข้อมูล
-include './controls/db1.php';
+include './controls/db.php';
 
 
 // ดึงข้อมูลสินค้าจากตาราง products

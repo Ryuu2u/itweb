@@ -1,5 +1,5 @@
 <?php
-    include 'db1.php';
+    include 'db.php';
 
 
     // ดึงข้อมูลผู็ใช้งานตาม id

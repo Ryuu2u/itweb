@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db1.php';
+include 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $product_name = trim($_POST['product_name']);
